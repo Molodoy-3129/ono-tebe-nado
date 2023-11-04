@@ -1,3 +1,4 @@
+@import url(/fonts/fonts.css);
 
 .header-container {
     max-width: 1440px;
@@ -18,22 +19,25 @@
     font-size: 18px;
 }
 
-.header__links-list {
-    display: flex;
-    justify-content: space-between;
-    list-style: circle;
-
-    width: auto;
+.header__links-list {  display: flex;
+    justify-content: space-between; 
+    list-style: circle;   width: auto;
+    color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 
 }
 
-.a-main {
+.link-main {
     list-style: none;
 }
 
 
 
-.a-main a {
+.link-main a {
     text-decoration: none;
 
 
@@ -42,17 +46,18 @@
 .header-logo {
     width: 148px;
     height: 105px;
+    flex-shrink: 0;
     margin-right: 160px;
 
 }
 
-.header__logo-img {
-    width: auto;
-    height: auto;
-}
-
-.p-ams {
-    margin-top: 5px;
+.address {
+color: #000;
+font-family: Raleway;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 24.3px;
 }
 
 .main {
@@ -81,6 +86,7 @@
 
     width: 1440px;
     height: auto;
+    
 
 
 
@@ -88,22 +94,23 @@
 
 
 .cover-title {
-    font-size: 90px;
-
     color: #FFF;
+    font-family: Raleway;
+    font-size: 100px;
     letter-spacing: 30px;
+    width: 1340px;
 }
 
-
-.cover-title-two {
-    align-items: center;
-    text-align: center;
-
+.aligned_text-center {
+  text-align: center;
+  line-height: 115%
 }
 
-.cover-title-three {
-    text-align: right;
+.aligned_text-right {
+ text-align: right;
+ line-height: 115%
 }
+
 
 .cover-discription {
     display: flex;
@@ -159,7 +166,7 @@
 
 .card {
     width: 430px;
-    height: 450px;
+    min-height: 450px;
     padding: 50px 40px;
 
 }
@@ -167,24 +174,47 @@
 .card-title {
     color: #FFF;
     line-height: 120%;
+    text-decoration: none;
+}
+
+.card-title  h3 {
+    color: #FFF;
+
+    font-family: 'Raleway' sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    width: 350px;
 }
 
 .card-text {
-    font-size: 20px;
     color: #FFF;
-    line-height: 120%;
 
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    font-family: 'Raleway' sans-serif;
+    
+   
 }
+
+
 
 .card_type_film {
     position: relative;
     background-color: rgb(0 0 0 / 0.6);
+    
 }
 
 
 .overlay-card-film {
     background-image: url(../images/card-lot-01.jpg);
-    background-size: cover;
+    background-size: cover; 
 }
 
 .card_type_book {
@@ -212,16 +242,16 @@
 }
 
 .lots__card-list-item-film {
-    margin-bottom: 202px;
+    margin-bottom: 228px;
 
 }
 
 .lots__card-list-item-book {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .lots__card-list-item-picture {
-    margin-bottom: 80px;
+    margin-bottom: 108px;
 }
 
 .lots__look-more-link {
@@ -229,6 +259,7 @@
     font-size: 20px;
     text-decoration: none;
     border-bottom: solid 2px black;
+    margin-left: 40px;
 
 }
 
@@ -236,6 +267,10 @@
     padding: 0 50px;
 
 
+}
+
+.about h2 {
+    text-transform: uppercase;
 }
 
 .about-logo-content {
@@ -246,7 +281,7 @@
 
 .about_logo-block {
     width: 430px;
-    height: 240px;
+    min-height: 240px;
     padding: 0 95px;
     margin-right: 25px;
 }
@@ -287,8 +322,14 @@
 .about-text {
 
     flex-direction: column;
+    width: 885px;
+    color: #000;
 
+    font-family: Raleway;
     font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 
 }
 
@@ -299,7 +340,8 @@
 .footer {
     width: 1440px;
     margin: auto;
-    padding: 90px 50px;
+    padding: 0 50px ;
+    margin-top: 100px;
 }
 
 .footer-content {
@@ -307,9 +349,25 @@
     justify-content: space-between;
 }
 
+.address {
+    color: #000;
+
+font-family: Raleway;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 24.3px;
+}
+
 .footer-links-list {
     list-style: none;
     text-align: center;
+    color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.3px;
 }
 
 .footer-social-list {
@@ -323,7 +381,4 @@
 .footer-social-list img {
     width: 48px;
     height: 48px;
-
-
-
 }

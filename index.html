@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,13 +15,13 @@
     <header class="header">
       <nav class="header-menu">
         <ul class="header__links-list">
-          <li class="a-main"><a href="#" 0>главная</a></li>
+          <li class="link-main"><a href="#" 0>главная</a></li>
           <li><a href="#0">посмотреть лоты</a>
           <li><a href="#0">об аукционе</a></li>
         </ul>
       </nav>
       <div class="header-logo">
-        <img src="./images/logo-black.svg" alt="логотип" class="header__logo-img">
+        <a href="#0"><img src="./images/logo-black.svg" alt="логотип" class="header__logo-img"></a>
       </div>
       <div class="address-block">
         <address class="address">
@@ -28,8 +29,8 @@
           <br>
           <a href="mailto:mail@example.com">mail@example.com</a>
           <br>
-          <p>наб. Принсенграхт 263-265,</p>
-          <p class="p-ams">Амстердам</p>
+          <p>наб. Принсенграхт 263-265, <br>Амстердам</p>
+
         </address>
       </div>
 
@@ -43,17 +44,20 @@
       <section class="cover">
 
         <div class="cover-title">
-          <h1 class="cover-title-one"><span class="aligned-text">ОН</span> <span
-              class="aligned-text-more-space">О</span></h1>
-          <h1 class="cover-title-two"><span class="aligned_text-center">ТЕБ</span> <span
-              class="aligned_text-center-more-space">E</span></h1>
-          <h1 class="cover-title-three"><span class="aligned_text-right">Н</span> <span
-              class="aligned_text-right-more-space">АДО</span></h1>
+          <h1>
+            <div class="aligned-text"><span >ОН</span> <span class="aligned-text-more-space">О </span></div>
+            <div class="aligned_text-center"><span >ТЕБ</span> <span class="aligned_text-center-more-space">E</span></div>
+            <div class="aligned_text-right"><span >Н</span> <span class="aligned_text-right-more-space">АДО</span></div>
 
+            
+
+            
+
+          </h1>
         </div>
         <div class="cover-discription">
           <p class="cover-discription-text">Аукцион вещей, в которые никто не верил</p>
-          <button class="cover-discription-button">Сделать ставку</button>1
+          <button class="cover-discription-button" type="button">Сделать ставку</button>
         </div>
 
 
@@ -63,39 +67,39 @@
     </div>
     <section class="lots">
 
-      <h1 class="lots-heading">ЛОТЫ</h1>
+      <h2 class="lots-heading">ЛОТЫ</h2>
 
-      <div class="cards-list">
+      <article   class="cards-list">
         <div class="overlay-card-film">
-          <div class="card card_type_film">
-            <h1 class="lots__card-list-item-film"><a class="card-title" href="#0">Фильм режиссёра, который бросил
-                киношколу</a></h1>
-            <p class="card-text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не
+         <a href="#0" class="card-title"><div class="card card_type_film">
+             <h3 class="lots__card-list-item-film">Фильм режиссёра, который бросил
+                киношколу</h3>
+            <p class="card-text first">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не
               знали, что режиссёр — Пол Томас Андерсон?</p>
-          </div>
+          </div></a> 
         </div>
         <div class="overlay-card-book">
-          <div class="card card_type_book">
-            <h1 class="lots__card-list-item-book"><a class="card-title" href="#0">Книга, где описан один скучный день из
-                жизни рекламного агента</a></h1>
+          <a class="card-title" href="#0"><div class="card card_type_book">
+           <h3 class="lots__card-list-item-book">Книга, где описан один скучный день из
+                жизни рекламного агента</h3>
             <p class="card-text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на
               древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с
               античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
               Джеймса Джойса?</p>
+            </div></a>
           </div>
-        </div>
         <div class="overlay-card-picture">
-          <div class="card card_type_picture">
-            <h1 class="lots__card-list-item-picture"><a class="card-title" href="#0">Картина, которую повторит даже
-                5-летний сын маминой подруги</a></h1>
+          <a class="card-title" href="#0"><div class="card card_type_picture">
+            <h3 class="lots__card-list-item-picture">Картина, которую повторит даже
+                5-летний сын маминой подруги</h3>
             <p class="card-text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на
               инфузорию-туфельку. Никаких полей, лесов, котиков… Сколько бы вы на такое поставили, если бы не знали, что
               это — одна из революционных работ <br>
               <p class="card-text">Кандинского?</p>
             </p>
-          </div>
+          </div></a>
         </div>
-      </div>
+      </article>
       <a href="#a" class="lots__look-more-link">посмотреть больше</a>
     </section>
 
@@ -107,7 +111,7 @@
           </div>
 
         </div>
-        <h1 class="about-title">Об аукционе</h1>
+        <h2 class="about-title">Об аукционе</h2>
 
       </div>
 
@@ -127,9 +131,7 @@
 
 
     </section>
-    <about class="section">
-
-    </about>
+   
 
   </main>
   <footer class="footer">
@@ -139,13 +141,13 @@
         <br>
         <a href="mailto:mail@example.com">mail@example.com</a>
         <br>
-        <p>наб. Принсенграхт 263-265,</p>
-        <p class="p-ams">Амстердам</p>
+        <p>наб. Принсенграхт 263-265, <br> Амстердам</p>
+       
       </address>
       <div class="footer-menu">
         <nav>
           <ul class="footer-links-list">
-            <li class="a-main"><a href="#">главная</a></li>
+            <li class="link-main"><a href="#">главная</a></li>
             <li><a href="#">посмотреть лоты</a>
             <li><a href="#">об аукционе</a></li>
           </ul>
@@ -167,4 +169,5 @@
 
 
 </body>
+
 </html>
