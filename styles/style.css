@@ -75,6 +75,7 @@ line-height: 24.3px;
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
+    
 
 
 }
@@ -95,20 +96,27 @@ line-height: 24.3px;
 
 .cover-title {
     color: #FFF;
-    font-family: Raleway;
+    font-family: 'Raleway';
     font-size: 100px;
     letter-spacing: 30px;
-    width: 1340px;
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+
+    
 }
 
 .aligned_text-center {
   text-align: center;
-  line-height: 115%
+  line-height: 115%;
+  width: 1280px;
 }
 
 .aligned_text-right {
  text-align: right;
- line-height: 115%
+ line-height: 115%;
+ margin-right: 70px;
+ 
 }
 
 
@@ -119,6 +127,8 @@ line-height: 24.3px;
     align-items: center;
 
 }
+
+
 
 .cover-discription-text {
     color: white;
@@ -143,6 +153,10 @@ line-height: 24.3px;
 
 
 
+}
+
+.cover-discription-button:hover {
+    cursor: pointer;
 }
 
 .lots {
@@ -322,8 +336,11 @@ line-height: 24.3px;
 .about-text {
 
     flex-direction: column;
+    
+    
     width: 885px;
     color: #000;
+    
 
     font-family: Raleway;
     font-size: 20px;
@@ -333,14 +350,16 @@ line-height: 24.3px;
 
 }
 
-.p-1 {
+.about-text-first {
     margin-bottom: 25px;
 }
+
+
 
 .footer {
     width: 1440px;
     margin: auto;
-    padding: 0 50px ;
+    padding: 0 50px 90px;
     margin-top: 100px;
 }
 
